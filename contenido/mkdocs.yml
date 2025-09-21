@@ -42,6 +42,7 @@ nav:
   - Clases y funciones: clasesyfunciones.md
   - Programa con POO: practica3.md
   - Resumen: resumen.md
+  - Practica final: PracticaFinal.md
 
 plugins:
  - mermaid2:
