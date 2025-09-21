@@ -41,7 +41,7 @@ nav:
   - Gestión de archivos: gestionarchivos.md
   - Clases y funciones: clasesyfunciones.md
   - Programa con POO: practica3.md
-  - Resumen sintaxis: resumen.md
+  - Resumen: resumen.md
 
 plugins:
  - mermaid2:
