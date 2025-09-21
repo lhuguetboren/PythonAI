@@ -4,7 +4,7 @@
 
 - Integrar clases, conjuntos y ficheros CSV en un único proyecto.
 - Leer información de horarios de un archivo CSV, crear objetos que representen cada registro y procesarla.
-- Utilizar sets para eliminar duplicados y aplicar operaciones de unión, intersección y diferencia【435315475632304†L480-L518】.
+- Utilizar sets para eliminar duplicados y aplicar operaciones de unión, intersección y diferencia.
 - Guardar los resultados en un nuevo archivo CSV utilizando el módulo csv de la biblioteca estándar
 
 ## 1. Enunciado de la práctica
