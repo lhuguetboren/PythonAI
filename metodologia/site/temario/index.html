@@ -1,0 +1,1292 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../metodologia/">
+      
+      
+        <link rel="next" href="../calendario/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Temari - MPOPT. Programació en entorn col·laboratiu</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/base.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduccion-a-python-e-ia" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MPOPT. Programació en entorn col·laboratiu" class="md-header__button md-logo" aria-label="MPOPT. Programació en entorn col·laboratiu" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MPOPT. Programació en entorn col·laboratiu
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Temari
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MPOPT. Programació en entorn col·laboratiu" class="md-nav__button md-logo" aria-label="MPOPT. Programació en entorn col·laboratiu" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MPOPT. Programació en entorn col·laboratiu
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodología
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Temari
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Temari
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introducción
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-contexto-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Contexto del curso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-objetivos-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Objetivos generales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-competencias-a-desarrollar" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Competencias a desarrollar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra1-introduccion-a-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA1 – Introducción a Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA1 – Introducción a Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra2-tratamiento-de-informacion-con-numpy-y-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA2 – Tratamiento de información con Numpy y Pandas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA2 – Tratamiento de información con Numpy y Pandas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra3-procesamiento-de-lenguaje-natural-e-introduccion-a-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA3 – Procesamiento de Lenguaje Natural e Introducción a IA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA3 – Procesamiento de Lenguaje Natural e Introducción a IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra4-aplicaciones-web-con-python-flask-chatbot-sencillo" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA4 – Aplicaciones web con Python (Flask / Chatbot sencillo)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA4 – Aplicaciones web con Python (Flask / Chatbot sencillo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra5-visualizacion-de-datos-matplotlib-seaborn-graphviz" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA5 – Visualización de datos (Matplotlib, Seaborn, Graphviz)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA5 – Visualización de datos (Matplotlib, Seaborn, Graphviz)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra6-recursos-transversales-colab-kaggle-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA6 – Recursos transversales (Colab, Kaggle, Datasets)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA6 – Recursos transversales (Colab, Kaggle, Datasets)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calendario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendari
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evaluacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaluació
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introducción
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-contexto-del-curso" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Contexto del curso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-objetivos-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Objetivos generales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-competencias-a-desarrollar" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Competencias a desarrollar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra1-introduccion-a-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA1 – Introducción a Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA1 – Introducción a Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra2-tratamiento-de-informacion-con-numpy-y-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA2 – Tratamiento de información con Numpy y Pandas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA2 – Tratamiento de información con Numpy y Pandas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra3-procesamiento-de-lenguaje-natural-e-introduccion-a-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA3 – Procesamiento de Lenguaje Natural e Introducción a IA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA3 – Procesamiento de Lenguaje Natural e Introducción a IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra4-aplicaciones-web-con-python-flask-chatbot-sencillo" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA4 – Aplicaciones web con Python (Flask / Chatbot sencillo)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA4 – Aplicaciones web con Python (Flask / Chatbot sencillo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra5-visualizacion-de-datos-matplotlib-seaborn-graphviz" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA5 – Visualización de datos (Matplotlib, Seaborn, Graphviz)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA5 – Visualización de datos (Matplotlib, Seaborn, Graphviz)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ra6-recursos-transversales-colab-kaggle-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      RA6 – Recursos transversales (Colab, Kaggle, Datasets)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RA6 – Recursos transversales (Colab, Kaggle, Datasets)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contenidos-propuestos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos Propuestos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-evaluacion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criterios de Evaluación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="introduccion-a-python-e-ia">Introducción a Python e IA</h1>
+<p><strong>Ciclos Superiores DAM</strong></p>
+<hr />
+<h2 id="indice">Índice</h2>
+<ol>
+<li>Introducción<br />
+   1.1. Contexto del curso<br />
+   1.2. Objetivos generales<br />
+   1.3. Competencias a desarrollar  </li>
+<li>RA1 – Introducción a Python  </li>
+<li>Objetivos  </li>
+<li>Contenidos Propuestos  </li>
+<li>Criterios de Evaluación  </li>
+<li>RA2 – Tratamiento de información con Numpy y Pandas  </li>
+<li>RA3 – Procesamiento de Lenguaje Natural e Introducción a IA  </li>
+<li>RA4 – Aplicaciones web con Python (Flask / Chatbot sencillo)  </li>
+<li>RA5 – Visualización de datos (Matplotlib, Seaborn, Graphviz)  </li>
+<li>RA6 – Recursos transversales (Colab, Kaggle, Datasets)  </li>
+</ol>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<h3 id="11-contexto-del-curso">1.1. Contexto del curso</h3>
+<p>El presente curso se enmarca dentro de los ciclos formativos de grado superior en <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> y <strong>Desarrollo de Aplicaciones Web (DAW)</strong>.</p>
+<p>Su finalidad es dotar al alumnado de los conocimientos y habilidades necesarias para:</p>
+<ul>
+<li>Introducirse en el lenguaje Python como base para el desarrollo de aplicaciones de Inteligencia Artificial.  </li>
+<li>Conocer y aplicar las principales librerías para el tratamiento de datos, aprendizaje automático, visualización y desarrollo de aplicaciones web.  </li>
+<li>Desarrollar un proyecto práctico que integre las competencias adquiridas en un chatbot funcional, capaz de interactuar con el usuario a través de la web y apoyado en técnicas básicas de procesamiento de lenguaje natural.  </li>
+</ul>
+<p>Este curso no pretende formar especialistas en IA de forma exhaustiva, sino proporcionar una base sólida, práctica y transversal que prepare al alumnado para afrontar futuros proyectos relacionados con el análisis de datos, el aprendizaje automático y el desarrollo de aplicaciones inteligentes.</p>
+<hr />
+<h3 id="12-objetivos-generales">1.2. Objetivos generales</h3>
+<ul>
+<li>Aprender los fundamentos de Python como lenguaje de programación flexible, sencillo y orientado a la ciencia de datos y la inteligencia artificial.  </li>
+<li>Manejar librerías especializadas para el tratamiento, análisis y visualización de datos (<strong>Numpy, Pandas, Matplotlib, Seaborn, Graphviz</strong>).  </li>
+<li>Comprender los conceptos básicos de IA y Machine Learning, con especial atención al procesamiento de lenguaje natural mediante <strong>TensorFlow y Scikit-learn</strong>.  </li>
+<li>Desarrollar aplicaciones web con <strong>Flask</strong> que integren modelos de IA y permitan la creación de chatbots sencillos.  </li>
+<li>Adquirir competencias en herramientas transversales (<strong>Git, GitHub/GitLab, Google Colab, Kaggle</strong>) que faciliten el trabajo colaborativo y la gestión de proyectos.  </li>
+<li>Fomentar el aprendizaje autónomo y la capacidad crítica, aplicando los conocimientos a datasets y problemas reales.  </li>
+<li>Potenciar la empleabilidad del alumnado, capacitándolo para afrontar entornos de trabajo donde la programación en Python y la IA son cada vez más demandadas.  </li>
+</ul>
+<hr />
+<h3 id="13-competencias-a-desarrollar">1.3. Competencias a desarrollar</h3>
+<p><strong>Competencias específicas</strong></p>
+<ul>
+<li>Capacidad para programar en Python aplicando estructuras de control, funciones, colecciones y programación orientada a objetos.  </li>
+<li>Habilidad para gestionar, transformar y analizar datos mediante librerías de Python.  </li>
+<li>Conocimiento y aplicación de técnicas básicas de IA y NLP para resolver problemas sencillos de clasificación de texto.  </li>
+<li>Desarrollo de aplicaciones web funcionales que integren modelos de IA.  </li>
+<li>Capacidad para representar información visualmente y comunicar resultados a través de gráficos y diagramas.  </li>
+</ul>
+<p><strong>Competencias transversales</strong></p>
+<ul>
+<li>Gestión de proyectos en la nube con Kaggle.  </li>
+<li>Comunicación técnica escrita, mediante documentación clara y estructurada en Markdown y notebooks.  </li>
+<li>Pensamiento crítico y resolución de problemas, aplicando la teoría a casos reales.  </li>
+<li>Autonomía en el aprendizaje, mediante la búsqueda y uso de documentación oficial y recursos de apoyo.  </li>
+</ul>
+<hr />
+<h2 id="ra1-introduccion-a-python">RA1 – Introducción a Python</h2>
+<h3 id="objetivos">Objetivos</h3>
+<ul>
+<li>Familiarizar al alumnado con la sintaxis y estructuras básicas de Python.  </li>
+<li>Adquirir autonomía en el uso de entornos de desarrollo.  </li>
+<li>Introducir las bases del pensamiento algorítmico con Python como lenguaje de referencia.  </li>
+</ul>
+<h3 id="contenidos-propuestos">Contenidos Propuestos</h3>
+<ul>
+<li><strong>Entorno de trabajo</strong>  </li>
+<li>Instalación de Python y configuración del entorno.  </li>
+<li>Uso de Jupyter y Visual Studio Code.  </li>
+<li>
+<p>Primer script en Python.</p>
+</li>
+<li>
+<p><strong>Sintaxis básica y tipos de datos</strong>  </p>
+</li>
+<li>Variables, constantes y operadores.  </li>
+<li>Tipos de datos: numéricos, booleanos, cadenas.  </li>
+<li>Conversión de tipos (casting).  </li>
+<li>
+<p>Entrada y salida de datos.  </p>
+</li>
+<li>
+<p><strong>Estructuras de control</strong>  </p>
+</li>
+<li>Condicionales (if, elif, else).  </li>
+<li>Bucles (for, while).  </li>
+<li>
+<p>Manejo de errores básicos con try/except.  </p>
+</li>
+<li>
+<p><strong>Colecciones de datos</strong>  </p>
+</li>
+<li>Listas, tuplas, conjuntos y diccionarios.  </li>
+<li>Operaciones básicas de búsqueda, inserción y borrado.  </li>
+<li>
+<p>Comprensiones de listas (list comprehensions).  </p>
+</li>
+<li>
+<p><strong>Programas interactivos y debugger</strong></p>
+</li>
+<li>Introducción a las funciones  </li>
+<li>Ejecutar un programa con parametros</li>
+<li>
+<p>Introducción al debug mediante Visual Code</p>
+</li>
+<li>
+<p><strong>Gestión de archivos</strong></p>
+</li>
+<li>
+<p>Abrir, modificar, guardar, eliminar un archivo de texto, CSV y JSON</p>
+</li>
+<li>
+<p><strong>Funciones y modularidad</strong>  </p>
+</li>
+<li>Definición y llamada de funciones.  </li>
+<li>Argumentos y valores de retorno.  </li>
+<li>Uso de librerías estándar (math, random, datetime).  </li>
+</ul>
+<h3 id="criterios-de-evaluacion">Criterios de Evaluación</h3>
+<ul>
+<li>Instalación y uso correcto del entorno de desarrollo.  </li>
+<li>Uso adecuado de tipos de datos y operadores.  </li>
+<li>Implementación de estructuras de control en ejercicios.  </li>
+<li>Manejo de colecciones en programas básicos.  </li>
+<li>Creación y uso de funciones propias.  </li>
+<li>Entrega de prácticas documentadas con código comentado.  </li>
+<li>Resolución autónoma de ejercicios propuestos.  </li>
+</ul>
+<hr />
+<h2 id="ra2-tratamiento-de-informacion-con-numpy-y-pandas">RA2 – Tratamiento de información con Numpy y Pandas</h2>
+<h3 id="objetivos_1">Objetivos</h3>
+<ul>
+<li>Comprender el uso de librerías externas en Python.  </li>
+<li>Manipular y analizar datos en estructuras optimizadas.  </li>
+<li>Sentar las bases para trabajar con datasets en IA.  </li>
+</ul>
+<h3 id="contenidos-propuestos_1">Contenidos Propuestos</h3>
+<ul>
+<li><strong>Numpy</strong>: arrays, operaciones, indexación, álgebra lineal.  </li>
+<li><strong>Pandas</strong>: Series, DataFrames, lectura/escritura de datos, filtrado, limpieza de datos.  </li>
+<li>Aplicaciones prácticas: análisis exploratorio en datasets (Iris, Titanic).  </li>
+</ul>
+<h3 id="criterios-de-evaluacion_1">Criterios de Evaluación</h3>
+<ul>
+<li>Instalación y uso correcto de librerías.  </li>
+<li>Uso de arrays en Numpy para operaciones estadísticas.  </li>
+<li>Aplicación de indexación y filtrado en DataFrames.  </li>
+<li>Importación/exportación de datos en distintos formatos.  </li>
+<li>Manejo correcto de nulos y duplicados.  </li>
+<li>Uso de funciones estadísticas y groupby.  </li>
+<li>Mini-proyecto de limpieza y análisis de dataset real.  </li>
+<li>Claridad y buenas prácticas en el código.  </li>
+</ul>
+<hr />
+<h2 id="ra3-procesamiento-de-lenguaje-natural-e-introduccion-a-ia">RA3 – Procesamiento de Lenguaje Natural e Introducción a IA</h2>
+<h3 id="objetivos_2">Objetivos</h3>
+<ul>
+<li>Conocer los fundamentos del aprendizaje automático.  </li>
+<li>Comprender el flujo de un modelo de IA.  </li>
+<li>Procesar y representar texto para su uso en modelos.  </li>
+<li>Entrenar un modelo de clasificación con TensorFlow/Scikit-learn.  </li>
+<li>Explorar de forma introductoria la aplicación de IA en imágenes con OpenCV.</li>
+</ul>
+<h3 id="contenidos-propuestos_2">Contenidos Propuestos</h3>
+<ul>
+<li>Introducción a IA y Machine Learning.  </li>
+<li>Preprocesamiento de texto: tokenización, normalización, TF-IDF, embeddings.  </li>
+<li>Clasificadores simples con Scikit-learn (Naive Bayes, Regresión logística).  </li>
+<li>Modelos secuenciales con TensorFlow/Keras.  </li>
+<li>Concepto de imagen como matriz de píxeles.</li>
+<li>Operaciones básicas con imagenes con openCV: lectura de imagen, conversión a escala de grises, detección de bordes.</li>
+<li>Proyecto práctico:</li>
+<li>Clasificador de SMS (spam/no spam) </li>
+<li>Detección de rostro con un clasificador Haar.</li>
+</ul>
+<h3 id="criterios-de-evaluacion_2">Criterios de Evaluación</h3>
+<ul>
+<li>Comprensión del flujo de trabajo en IA.  </li>
+<li>Correcto preprocesamiento de texto.  </li>
+<li>Uso de representaciones de texto adecuadas.  </li>
+<li>Implementación de modelos de clasificación.  </li>
+<li>Evaluación de métricas (accuracy, precision, recall).  </li>
+<li>Uso correcto de Jupyter.  </li>
+<li>Entrega de mini-proyecto con dataset real.  </li>
+<li>Claridad y buenas prácticas en el código.  </li>
+</ul>
+<hr />
+<h2 id="ra4-aplicaciones-web-con-python-flask-chatbot-sencillo">RA4 – Aplicaciones web con Python (Flask / Chatbot sencillo)</h2>
+<h3 id="objetivos_3">Objetivos</h3>
+<ul>
+<li>Comprender el funcionamiento de un servidor web en Python.  </li>
+<li>Crear aplicaciones web con Flask.  </li>
+<li>Exponer modelos de IA a través de APIs.  </li>
+<li>Desarrollar un chatbot básico accesible vía navegador.  </li>
+</ul>
+<h3 id="contenidos-propuestos_3">Contenidos Propuestos</h3>
+<ul>
+<li>Introducción a Flask: rutas, GET/POST.  </li>
+<li>Plantillas y formularios (HTML + Jinja2).  </li>
+<li>Creación de APIs REST con JSON.  </li>
+<li>Integración con modelos de IA entrenados.  </li>
+<li>Proyecto práctico: chatbot de preguntas frecuentes.  </li>
+</ul>
+<h3 id="criterios-de-evaluacion_3">Criterios de Evaluación</h3>
+<ul>
+<li>Creación y ejecución de un servidor Flask básico.  </li>
+<li>Definición correcta de rutas y métodos HTTP.  </li>
+<li>Uso de plantillas HTML y formularios.  </li>
+<li>Implementación de endpoints REST.  </li>
+<li>Integración con un modelo de IA.  </li>
+<li>Desarrollo de chatbot funcional.  </li>
+<li>Estructura clara del proyecto.  </li>
+<li>Documentación y entrega del mini-proyecto.  </li>
+</ul>
+<hr />
+<h2 id="ra5-visualizacion-de-datos-matplotlib-seaborn-graphviz">RA5 – Visualización de datos (Matplotlib, Seaborn, Graphviz)</h2>
+<h3 id="objetivos_4">Objetivos</h3>
+<ul>
+<li>Manejar librerías de visualización.  </li>
+<li>Representar datos en gráficos básicos y avanzados.  </li>
+<li>Comunicar hallazgos mediante gráficos.  </li>
+<li>Visualizar flujos y estructuras con Graphviz.  </li>
+</ul>
+<h3 id="contenidos-propuestos_4">Contenidos Propuestos</h3>
+<ul>
+<li><strong>Matplotlib</strong>: gráficos básicos, personalización, subplots.  </li>
+<li><strong>Seaborn</strong>: gráficos estadísticos, heatmaps, integración con pandas.  </li>
+<li><strong>Graphviz</strong>: nodos, aristas, diagramas de flujos y árboles.  </li>
+<li>Proyecto práctico: exploración visual de un dataset + diagrama de flujo chatbot.  </li>
+</ul>
+<h3 id="criterios-de-evaluacion_4">Criterios de Evaluación</h3>
+<ul>
+<li>Uso correcto de Matplotlib.  </li>
+<li>Aplicación de Seaborn en análisis exploratorio.  </li>
+<li>Interpretación de gráficos en relación con datasets.  </li>
+<li>Creación de diagramas en Graphviz.  </li>
+<li>Claridad y legibilidad de gráficos.  </li>
+<li>Entrega de notebook comentado.  </li>
+<li>Proyecto de visualización aplicado.  </li>
+<li>Explicación de resultados obtenidos.  </li>
+</ul>
+<hr />
+<h2 id="ra6-recursos-transversales-colab-kaggle-datasets">RA6 – Recursos transversales (Colab, Kaggle, Datasets)</h2>
+<h3 id="objetivos_5">Objetivos</h3>
+<ul>
+<li>Usar entornos en la nube para ejecutar proyectos de IA.  </li>
+<li>Acceder a datasets reales y documentar proyectos.  </li>
+<li>Fomentar buenas prácticas de colaboración y documentación.  </li>
+</ul>
+<h3 id="contenidos-propuestos_5">Contenidos Propuestos</h3>
+<ul>
+<li>Google Colab y Kaggle Notebooks: ejecución de código en la nube.  </li>
+<li>Fuentes de datasets: Kaggle, UCI, scikit-learn.  </li>
+<li>Documentación en Markdown y notebooks.  </li>
+<li>Proyecto transversal: repositorio en GitHub con los RA del curso.  </li>
+</ul>
+<h3 id="criterios-de-evaluacion_5">Criterios de Evaluación</h3>
+<ul>
+<li>Ejecución de notebooks en Colab/Kaggle.  </li>
+<li>Importación y uso de datasets reales.  </li>
+<li>Documentación clara en README y notebooks.  </li>
+<li>Proyecto transversal documentado en repositorio.  </li>
+<li>Buenas prácticas de organización de proyectos.  </li>
+<li>Integración de RA6 con los RA anteriores.  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

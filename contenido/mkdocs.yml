@@ -1,0 +1,52 @@
+site_name: DAM OPT — Python AI
+site_description: Documentación en Markdown para Python para AI
+site_url: http://localhost:8000/
+theme:
+  name: material
+  language: es
+  features:
+#    - navigation.tabs
+    - navigation.top 
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+#    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+
+# Configura tu repositorio para mostrar "Editar esta página":
+# repo_url: https://github.com/tu-usuario/tu-repo
+# edit_uri: edit/main/docs/
+
+nav:
+  - Inicio: index.md
+  - Entorno de trabajo: guia_python_vscode_windows.md
+  - Sintaxis básica y tipos de datos: datosOperadores.md
+  - Estructuras de control: estructurasControl.md 
+  - Ejecución .py: practica1.md
+  - Colecciones de datos: coleccionesDatos.md
+  - Programas interactivos: practica2.md
+  - Gestión de archivos: gestionarchivos.md
+  - Clases y funciones: clasesyfunciones.md
+  - Programa con POO: practica3.md
+  - Resumen sintaxis: resumen.md
+
+plugins:
+ - mermaid2:
+      version: 10.0.2
+      javascript: https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs
+ - search:
+      lang: es
+
