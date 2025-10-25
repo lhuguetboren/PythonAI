@@ -135,19 +135,41 @@ flowchart TD
 ```
 
 ```python
-# Crear conjuntos y operaciones
-a = {1, 2, 3, 3}
-b = set([3, 4, 5])
+# Ejemplo: uso de conjuntos con horarios de empleados
 
-print(a)          # {1, 2, 3}
-print(a | b)      # unión => {1, 2, 3, 4, 5}
-print(a & b)      # intersección => {3}
-print(a - b)      # diferencia => {1, 2}
-print(a ^ b)      # diferencia simétrica => {1, 2, 4, 5}
+# Conjunto de empleados que entran de mañana (antes de las 12:00)
+turno_mañana = {"María (08-16)", "Juan (09-17)", "Lucía (07-15)", "Ana (08-14)"}
 
-# Comprensión de conjuntos
-consonantes = {c for c in 'programacion' if c not in 'aeiou'}
-print(consonantes)
+# Conjunto de empleados que entran de tarde (12:00 o después)
+turno_tarde = {"Diego (12-20)", "Raúl (12-20)", "Juan (09-17)"}
+
+print("Turno mañana:", turno_mañana)
+print("Turno tarde:", turno_tarde)
+
+# Unión: todos los empleados (sin duplicados)
+print("\nUnión (mañana ∪ tarde):")
+print(turno_mañana | turno_tarde)
+
+# Intersección: empleados que aparecen en ambos turnos (ejemplo de solapamiento)
+print("\nIntersección (mañana ∩ tarde):")
+print(turno_mañana & turno_tarde)
+
+# Diferencia: empleados solo del turno de mañana
+print("\nDiferencia (mañana - tarde):")
+print(turno_mañana - turno_tarde)
+
+# Diferencia simétrica: empleados que están en un turno u otro, pero no en ambos
+print("\nDiferencia simétrica (mañana Δ tarde):")
+print(turno_mañana ^ turno_tarde)
+
+# Operaciones adicionales
+print("\n¿Raúl está en el turno de mañana?")
+print("Raúl (12-20)" in turno_mañana)
+
+# Ejemplo de eliminación de duplicados automáticamente
+horas = {"08", "09", "09", "10"}
+print("\nConjunto de horas únicas (sin duplicados):", horas)
+
 ```
 
 🔹 No admiten elementos duplicados.
