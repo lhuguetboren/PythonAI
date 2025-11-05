@@ -43,6 +43,23 @@ nav:
   - Programa con POO: practica3.md
   - Resumen: resumen.md
   - Practica final: PracticaFinal.md
+  - RA1 :
+    - Entorno de trabajo: RA1/guia_python_vscode_windows.md
+    - Sintaxis básica y tipos de datos: RA1/datosOperadores.md
+    - Estructuras de control: RA1/estructurasControl.md 
+    - Ejecución .py: RA1/practica1.md
+    - Colecciones de datos: RA1/coleccionesDatos.md
+    - Programas interactivos: RA1/practica2.md
+    - Gestión de archivos: RA1/gestionarchivos.md
+    - Clases y funciones: RA1/clasesyfunciones.md
+    - Programa con POO: RA1/practica3.md
+    - Resumen: RA1/resumen.md
+    - Practica final: RA1/PracticaFinal.md
+    - Debriefing: RA1/debriefing/debriefing.md
+  - RA2 :
+    - Análisis de datos: RA2/IntroduccionAnalisisDatos.md
+    - Conceptos básicos Análisis: RA2/ConceptosBasicosAnalisisDatos.md
+    - Referencias: RA2/ReferenciasAnalisisDatos.md
 
 plugins:
  - mermaid2:
