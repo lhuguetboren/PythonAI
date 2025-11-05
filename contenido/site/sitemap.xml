@@ -2,50 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://localhost:8000/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/PracticaFinal/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/clasesyfunciones/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/coleccionesDatos/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/datosOperadores/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/estructurasControl/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/gestionarchivos/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/guia_python_vscode_windows/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/practica1/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/practica2/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/practica3/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/resumen/</loc>
-         <lastmod>2025-09-21</lastmod>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/PracticaFinal/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/clasesyfunciones/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/coleccionesDatos/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/datosOperadores/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/estructurasControl/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/gestionarchivos/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/guia_python_vscode_windows/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/practica1/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/practica2/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/practica3/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/resumen/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/dataclass/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/debriefing/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/osC/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/path/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/pytest_crm/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/typing/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA1/debriefing/Readme/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/ConceptosBasicosAnalisisDatos/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/IntroduccionAnalisisDatos/</loc>
+         <lastmod>2025-11-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/ReferenciasAnalisisDatos/</loc>
+         <lastmod>2025-11-05</lastmod>
     </url>
 </urlset>
