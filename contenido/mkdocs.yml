@@ -32,17 +32,6 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Entorno de trabajo: guia_python_vscode_windows.md
-  - Sintaxis básica y tipos de datos: datosOperadores.md
-  - Estructuras de control: estructurasControl.md 
-  - Ejecución .py: practica1.md
-  - Colecciones de datos: coleccionesDatos.md
-  - Programas interactivos: practica2.md
-  - Gestión de archivos: gestionarchivos.md
-  - Clases y funciones: clasesyfunciones.md
-  - Programa con POO: practica3.md
-  - Resumen: resumen.md
-  - Practica final: PracticaFinal.md
   - RA1 :
     - Entorno de trabajo: RA1/guia_python_vscode_windows.md
     - Sintaxis básica y tipos de datos: RA1/datosOperadores.md
