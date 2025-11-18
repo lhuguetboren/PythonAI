@@ -3,7 +3,6 @@
 **Dataset**: ventas de videojuegos  
 > Variables: `img`, `title`, `console`, `genre`, `publisher`, `developer`, `critic_score`, `total_sales`, `na_sales`, `jp_sales`, `pal_sales`, `other_sales`, `release_date`, `last_update`
 
-
 ## 1. Imports & configuración
 
 Importacion de librerias
@@ -72,4 +71,4 @@ Importacion de librerias
 2. ¿Qué género de juego tiene mayor venta total? ¿Y cuál tiene mayor puntuación crítica media?  
 3. ¿Qué juego tiene la mayor proporción de ventas en una región específica (por ejemplo Japón) vs el total?  
 4. ¿Existe una correlación significativa entre la puntuación de crítica (`critic_score`) y las ventas totales (`total_sales`)? ¿Qué juegos se desvían de la tendencia?  
-5. Usa NumPy para identificar los juegos que están en el percentil 90 o superior de ventas totales y comenta: ¿qué características comunes tienen (género, consola, desarrollador, etc.)?  
+5. Usa NumPy para identificar los juegos que están en el percentil 90 o superior de ventas totales y comenta: ¿qué características comunes tienen (género, consola, desarrollador, etc.)?

@@ -3,7 +3,6 @@
 **Dataset**: vinos  
 > Variables: `id`, `country`, `description`, `designation`, `points`, `price`, `province`, `region_1`, `region_2`, `taster_name`, `taster_twitter_handle`, `title`, `variety`, `winery`
 
-
 ## 1. Imports & configuración
 
 Importacion de librerias
@@ -61,13 +60,11 @@ Importacion de librerias
 - Verificar distribución de `review_length` (longitud de la descripción).  
 - Ver si existe relación entre `review_length` y `points` o `price`: por ejemplo, ¿las descripciones largas corresponden a vinos mejor puntuados?
 
-
 ## 5. Uso de NumPy para análisis auxiliar
 
 - Usar `np.percentile()` para calcular percentiles de `price`, `points`, `price_per_point` y detectar valores atípicos.  
 - Utilizar funciones vectorizadas de NumPy para operaciones en arrays, por ejemplo calcular diferencia `price - median_price` o proporción respecto al precio medio.  
 - Crear histogramas o distribuciones de variables como `price`, `points` o `price_per_point` usando NumPy.
-
 
 ## 6. Preguntas
 
