@@ -2,94 +2,302 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://localhost:8000/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/PracticaFinal/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/clasesyfunciones/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/coleccionesDatos/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/datosOperadores/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/estructurasControl/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/gestionarchivos/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/guia_python_vscode_windows/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/practica1/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/practica2/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/practica3/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/resumen/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/dataclass/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/osC/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/path/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/pytest_crm/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/typing/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA1/debriefing/Readme/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA2/ConceptosBasicosAnalisisDatos/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA2/IntroduccionAnalisisDatos/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
     </url>
     <url>
          <loc>http://localhost:8000/RA2/ReferenciasAnalisisDatos/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/Coffee%2BShop%2BSales/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/Electricity%2BConsumption/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/LEGO%2BSets/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/Pizza%2BPlace%2BSales/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/Rotten%2BTomatoes%2BMovies/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/S%26P%2B500%2BStock%2BPrices%2B2014-2017/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/Spotify%2BStreaming%2BHistory/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/Video%2BGame%2BSales/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/World%2BCup/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/numpy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/winemag-data-130k-v2/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/0funciones_panda_numpy%20copy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/0funciones_panda_numpy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/NuevaColumnaConPercentil/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/RELLENAR_VALORES/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/asType/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/categorical/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/codigoDummy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/coerce/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/correlacion/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/estadisticosBasicos/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/histograma/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/merge/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/pd.to_datetime/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/destacar/resampleFechas/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/0funciones_panda_numpy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/astype_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/categorical_ejemplo/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/coerce_ejemplo/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/correlacion_ejemplo/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/dummy_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/estadisticosBasicos_ejemplo/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/histograma_ejemplo/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/merge_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/pandaGroupBy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/percentil_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/rellenar_valores_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/resample_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/to_datetime_unificado/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/0funciones_panda_numpy%20copy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/Dummy/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/NuevaColumnaConPercentil/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/RELLENAR_VALORES/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/asType/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/categorical/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/coerce/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/correlacion/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/estadisticosBasicos/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/histograma/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/merge/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/resampleFechas/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/RA2/Pindolas/old/to_datetime/</loc>
+         <lastmod>2025-11-18</lastmod>
     </url>
 </urlset>

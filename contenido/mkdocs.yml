@@ -48,7 +48,17 @@ nav:
   - RA2 :
     - Análisis de datos: RA2/IntroduccionAnalisisDatos.md
     - Conceptos básicos Análisis: RA2/ConceptosBasicosAnalisisDatos.md
-    - Referencias: RA2/ReferenciasAnalisisDatos.md
+    - Referencias: RA2/ReferenciasAnalisisDatos.  md
+    - Datasets:
+      - Coffe: RA2/AnalisisDatos/Coffee+Shop+Sales.md
+      - Electricity: RA2/AnalisisDatos/Electricity+Consumption.md
+      - LEGO-Sets: RA2/AnalisisDatos/LEGO+Sets.md
+      - Pizza+Place+Sales: RA2/AnalisisDatos/Pizza+Place+Sales.md
+      - Rotten-Tomatoes: RA2/AnalisisDatos/Rotten+Tomatoes+Movies.md
+      - S&P+500+Stock+Prices+2014-2017: RA2/AnalisisDatos/S&P+500+Stock+Prices+2014-2017.md
+      - Video+Game+Sales: RA2/AnalisisDatos/Video+Game+Sales.md
+      - winemag-data-130k-v2: RA2/AnalisisDatos/winemag-data-130k-v2.md
+      - World+Cup: RA2/AnalisisDatos/World+Cup.md
 
 plugins:
  - mermaid2:
