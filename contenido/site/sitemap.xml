@@ -109,6 +109,10 @@
          <lastmod>2025-11-18</lastmod>
     </url>
     <url>
+         <loc>http://localhost:8000/RA2/AnalisisDatos/RequerimientosAnalisis/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
          <loc>http://localhost:8000/RA2/AnalisisDatos/Rotten%2BTomatoes%2BMovies/</loc>
          <lastmod>2025-11-18</lastmod>
     </url>
