@@ -53,6 +53,7 @@ nav:
       - Requerimientos: RA2/AnalisisDatos/RequerimientosAnalisis.md
       - Pildoras:
           -asytpe: RA2/AnalisisDatos/pildoras/pildora_astype.md
+          -numpy: RA2/AnalisisDatos/pildoras/pildora_numpy.md
           -categorical: RA2/AnalisisDatos/pildoras/pildora_categorical.md
           -coerce: RA2/AnalisisDatos/pildoras/pildora_coerce.md
           -dummies: RA2/AnalisisDatos/pildoras/pildora_dummies.md
