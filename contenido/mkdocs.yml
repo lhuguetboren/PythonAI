@@ -51,6 +51,19 @@ nav:
     - Referencias: RA2/ReferenciasAnalisisDatos.  md
     - Datasets:
       - Requerimientos: RA2/AnalisisDatos/RequerimientosAnalisis.md
+      - Pildoras:
+          -asytpe: RA2/AnalisisDatos/pildoras/pildora_astype.md
+          -categorical: RA2/AnalisisDatos/pildoras/pildora_categorical.md
+          -coerce: RA2/AnalisisDatos/pildoras/pildora_coerce.md
+          -dummies: RA2/AnalisisDatos/pildoras/pildora_dummies.md
+          -estadisticos: RA2/AnalisisDatos/pildoras/pildora_estadisticas.md
+          -groupby: RA2/AnalisisDatos/pildoras/pildora_groupby.md
+          -histograma: RA2/AnalisisDatos/pildoras/pildora_histograma.md
+          -merge: RA2/AnalisisDatos/pildoras/pildora_merge.md
+          -pivot_table: RA2/AnalisisDatos/pildoras/pildora_pivot_table.md
+          -relleno_nulos: RA2/AnalisisDatos/pildoras/pildora_relleno_valores.md
+          -resample: RA2/AnalisisDatos/pildoras/pildora_resample.md
+          -datetime: RA2/AnalisisDatos/pildoras/pildora_to_datetime.md
       - Coffe: RA2/AnalisisDatos/Coffee+Shop+Sales.md
       - Electricity: RA2/AnalisisDatos/Electricity+Consumption.md
       - LEGO-Sets: RA2/AnalisisDatos/LEGO+Sets.md
@@ -61,7 +74,6 @@ nav:
       - UFO: RA2/AnalisisDatos/ufo_sightings_scrubbed.md
       - winemag-data-130k-v2: RA2/AnalisisDatos/winemag-data-130k-v2.md
       - Spotify: RA2/AnalisisDatos/Spotify.md
-      
       - World+Cup: RA2/AnalisisDatos/World+Cup.md
 
 plugins:
