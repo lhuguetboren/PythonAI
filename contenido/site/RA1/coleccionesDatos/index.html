@@ -1,0 +1,1012 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Documentación en Markdown para Python para AI" name="description"/>
+<link href="http://localhost:8000/RA1/coleccionesDatos/" rel="canonical"/>
+<link href="../practica1/" rel="prev"/>
+<link href="../practica2/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.20" name="generator"/>
+<title>Colecciones de datos - DAM OPT — Python AI</title>
+<link href="../../assets/stylesheets/main.e53b48f4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#unidad-colecciones-de-datos-en-python">
+          Saltar a contenido
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Cabecera" class="md-header__inner md-grid">
+<a aria-label="DAM OPT — Python AI" class="md-header__button md-logo" data-md-component="logo" href="../.." title="DAM OPT — Python AI">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            DAM OPT — Python AI
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Colecciones de datos
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Modo oscuro" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Modo oscuro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+<input aria-label="Modo claro" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Modo claro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Búsqueda" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Búsqueda" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Buscar" class="md-search__options">
+<button aria-label="Limpiar" class="md-search__icon md-icon" tabindex="-1" title="Limpiar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegación" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="DAM OPT — Python AI" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="DAM OPT — Python AI">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    DAM OPT — Python AI
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Inicio
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    RA1
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            RA1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../guia_python_vscode_windows/">
+<span class="md-ellipsis">
+    Entorno de trabajo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../datosOperadores/">
+<span class="md-ellipsis">
+    Sintaxis básica y tipos de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../estructurasControl/">
+<span class="md-ellipsis">
+    Estructuras de control
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../practica1/">
+<span class="md-ellipsis">
+    Ejecución .py
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Colecciones de datos
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Colecciones de datos
+    
+  </span>
+</a>
+<nav aria-label="Tabla de contenidos" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivos-de-la-unidad">
+<span class="md-ellipsis">
+      Objetivos de la unidad
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contenidos">
+<span class="md-ellipsis">
+      Contenidos
+    </span>
+</a>
+<nav aria-label="Contenidos" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-listas">
+<span class="md-ellipsis">
+      1. Listas
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-tuplas">
+<span class="md-ellipsis">
+      2. Tuplas
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-conjuntos-set">
+<span class="md-ellipsis">
+      3. Conjuntos (set)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-diccionarios">
+<span class="md-ellipsis">
+      4. Diccionarios
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-comprensiones">
+<span class="md-ellipsis">
+      5. Comprensiones
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comparativa-de-colecciones">
+<span class="md-ellipsis">
+      Comparativa de colecciones
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagrama-de-decision">
+<span class="md-ellipsis">
+      Diagrama de decisión
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../practica2/">
+<span class="md-ellipsis">
+    Programas interactivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gestionarchivos/">
+<span class="md-ellipsis">
+    Gestión de archivos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../clasesyfunciones/">
+<span class="md-ellipsis">
+    Clases y funciones
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../practica3/">
+<span class="md-ellipsis">
+    Programa con POO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../resumen/">
+<span class="md-ellipsis">
+    Resumen
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../PracticaFinal/">
+<span class="md-ellipsis">
+    Practica final
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../debriefing/">
+<span class="md-ellipsis">
+    Debriefing
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    RA2
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            RA2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/IntroduccionAnalisisDatos.md">
+<span class="md-ellipsis">
+    Análisis de datos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/ConceptosBasicosAnalisisDatos/">
+<span class="md-ellipsis">
+    Conceptos básicos Análisis
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/ReferenciasAnalisisDatos.  md">
+<span class="md-ellipsis">
+    Referencias
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Datasets
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Datasets
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/RequerimientosAnalisis/">
+<span class="md-ellipsis">
+    Requerimientos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Pildoras
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Pildoras
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_astype/">
+<span class="md-ellipsis">
+    -asytpe
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_numpy/">
+<span class="md-ellipsis">
+    -numpy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_categorical/">
+<span class="md-ellipsis">
+    -categorical
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_coerce/">
+<span class="md-ellipsis">
+    -coerce
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_dummies/">
+<span class="md-ellipsis">
+    -dummies
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_estadisticas.md">
+<span class="md-ellipsis">
+    -estadisticos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_groupby/">
+<span class="md-ellipsis">
+    -groupby
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_histograma/">
+<span class="md-ellipsis">
+    -histograma
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_merge/">
+<span class="md-ellipsis">
+    -merge
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_pivot_table/">
+<span class="md-ellipsis">
+    -pivot_table
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_relleno_valores/">
+<span class="md-ellipsis">
+    -relleno_nulos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_resample/">
+<span class="md-ellipsis">
+    -resample
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/pildoras/pildora_to_datetime/">
+<span class="md-ellipsis">
+    -datetime
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/Coffee%2BShop%2BSales/">
+<span class="md-ellipsis">
+    Coffe
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/Electricity%2BConsumption/">
+<span class="md-ellipsis">
+    Electricity
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/LEGO%2BSets/">
+<span class="md-ellipsis">
+    LEGO-Sets
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/Pizza%2BPlace%2BSales/">
+<span class="md-ellipsis">
+    Pizza+Place+Sales
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/Rotten%2BTomatoes%2BMovies/">
+<span class="md-ellipsis">
+    Rotten-Tomatoes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/S%26P%2B500%2BStock%2BPrices%2B2014-2017/">
+<span class="md-ellipsis">
+    S&amp;P+500+Stock+Prices+2014-2017
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/Video%2BGame%2BSales/">
+<span class="md-ellipsis">
+    Video+Game+Sales
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/ufo_sightings_scrubbed/">
+<span class="md-ellipsis">
+    UFO
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/winemag-data-130k-v2/">
+<span class="md-ellipsis">
+    winemag-data-130k-v2
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/Spotify/">
+<span class="md-ellipsis">
+    Spotify
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../RA2/AnalisisDatos/World%2BCup/">
+<span class="md-ellipsis">
+    World+Cup
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Tabla de contenidos" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivos-de-la-unidad">
+<span class="md-ellipsis">
+      Objetivos de la unidad
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contenidos">
+<span class="md-ellipsis">
+      Contenidos
+    </span>
+</a>
+<nav aria-label="Contenidos" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-listas">
+<span class="md-ellipsis">
+      1. Listas
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-tuplas">
+<span class="md-ellipsis">
+      2. Tuplas
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-conjuntos-set">
+<span class="md-ellipsis">
+      3. Conjuntos (set)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-diccionarios">
+<span class="md-ellipsis">
+      4. Diccionarios
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-comprensiones">
+<span class="md-ellipsis">
+      5. Comprensiones
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comparativa-de-colecciones">
+<span class="md-ellipsis">
+      Comparativa de colecciones
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagrama-de-decision">
+<span class="md-ellipsis">
+      Diagrama de decisión
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="unidad-colecciones-de-datos-en-python">Unidad: <strong>Colecciones de Datos en Python</strong></h1>
+<h2 id="objetivos-de-la-unidad">Objetivos de la unidad</h2>
+<ul>
+<li>Conocer y manipular listas, tuplas, conjuntos y diccionarios.  </li>
+<li>Usar operaciones básicas de inserción, búsqueda y borrado.  </li>
+<li>Crear listas dinámicas con <em>list comprehensions</em>.  </li>
+</ul>
+<hr/>
+<h2 id="contenidos">Contenidos</h2>
+<h3 id="1-listas">1. Listas</h3>
+<p>Las listas (<code>list</code>) son secuencias <strong>mutables</strong> que permiten almacenar cualquier tipo de dato y cuyo tamaño puede crecer o disminuir dinámicamente. Los índices comienzan en <code>0</code> y se admiten índices negativos para contar desde el final (<code>-1</code> es el último elemento). Además de acceder a un elemento concreto, el <em>slicing</em> (<code>lista[inicio:fin:paso]</code>) permite extraer sublistas sin bucles explícitos.</p>
+<p><strong>Operaciones principales</strong></p>
+<ul>
+<li><strong>Añadir elementos</strong>: <code>append(x)</code> agrega <code>x</code> al final; <code>extend(iterable)</code> concatena otra colección; <code>insert(i, x)</code> inserta <code>x</code> antes del índice <code>i</code>.  </li>
+<li><strong>Eliminar elementos</strong>: <code>remove(x)</code> borra la primera ocurrencia de <code>x</code> y lanza un error si no existe; <code>pop([i])</code> extrae y devuelve el elemento de la posición <code>i</code> (por defecto, el último); <code>clear()</code> vacía la lista.  </li>
+<li><strong>Reordenar</strong>: <code>sort()</code> ordena la lista en su lugar (acepta argumentos <code>key</code> y <code>reverse</code>), mientras que <code>sorted(lista)</code> devuelve una nueva lista ordenada. <code>reverse()</code> invierte el orden de los elementos.  </li>
+<li><strong>Buscar y contar</strong>: <code>index(x)</code> devuelve la posición de la primera aparición de <code>x</code>; <code>count(x)</code> devuelve cuántas veces aparece <code>x</code>.  </li>
+<li><strong>Copiar</strong>: <code>lista.copy()</code> o <code>lista[:]</code> devuelve una copia superficial.</li>
+<li><strong>Rebanado (slicing)</strong>: lista[inicio:fin:paso] devuelve una sublista. Se pueden omitir inicio o fin, usar índices negativos para contar desde el final y especificar un paso distinto de 1 para saltar elementos o invertir el orden.</li>
+</ul>
+<div class="mermaid">
+flowchart TD
+  subgraph L["Lista (list)"]
+    direction TB
+    L1["Estructura&lt;br/&gt;[a, b, c] · lst[i] · lst[i:j:k]"]
+    L2["Características&lt;br/&gt;Mutable · Ordenada · Indexada · Duplicados OK · Heterogénea"]
+    L3["Operaciones&lt;br/&gt;append · extend · insert · pop/remove/clear · sort/sorted · in/index/count · [f(x) for x in lst]"]
+    L4["Cuándo usar&lt;br/&gt;Secuencias mutables · pilas/colas · acumulación/transformación"]
+    L1 --&gt; L2 --&gt; L3 --&gt; L4
+end
+</div>
+<p><strong>Ejemplo</strong></p>
+<pre><code class="language-python"># Crear y modificar una lista
+numeros = [10, 5, 7, 3, 8]
+numeros.append(2)          # [10, 5, 7, 3, 8, 2]
+numeros.insert(2, 9)       # [10, 5, 9, 7, 3, 8, 2]
+ultimo = numeros.pop()     # extrae 2, lista = [10, 5, 9, 7, 3, 8]
+numeros.remove(7)          # [10, 5, 9, 3, 8]
+
+# Ordenar
+ordenados = sorted(numeros)    # [3, 5, 8, 9, 10] (copia ordenada)
+numeros.sort(reverse=True)     # lista original ahora es [10, 9, 8, 5, 3]
+print(numeros, ordenados)
+`
+# Slicing
+primeros_tres = numeros[:3]        # [10, 9, 8]
+ultimos_dos = numeros[-2:]         # [5, 3]
+saltos_de_dos = numeros[::2]       # [10, 8, 3]
+invertida = numeros[::-1]          # [3, 5, 8, 9, 10]
+
+sublista = numeros[1:4]            # [9, 8, 5]
+
+print(numeros)
+print("Ordenados:", ordenados)
+print("Primeros tres:", primeros_tres)
+print("Últimos dos:", ultimos_dos)
+print("Saltos de dos:", saltos_de_dos)
+print("Invertida:", invertida)
+print("Sublista [1:4]:", sublista)
+</code></pre>
+<h3 id="2-tuplas">2. Tuplas</h3>
+<p>Las tuplas (tuple) son secuencias inmutables: una vez creadas, no se pueden añadir ni eliminar elementos. Son útiles para agrupar datos heterogéneos que no deben cambiar (coordenadas, fechas, etc.) y pueden utilizarse como claves en diccionarios al ser objetos hashables.</p>
+<p>Python permite desempaquetar una tupla en múltiples variables y convertirla a lista si se necesita modificarla.</p>
+<div class="mermaid">flowchart TD
+
+  subgraph T["Tupla (tuple)"]
+    direction TB
+    T1["Estructura&lt;br/&gt;(a, b, c) · a, b = t"]
+    T2["Características&lt;br/&gt;Inmutable · Ordenada · Indexada · Duplicados OK · Hashable si sus elementos lo son"]
+    T3["Operaciones&lt;br/&gt;t[i] · slicing · count · index · t1 + t2 · uso como clave"]
+    T4["Cuándo usar&lt;br/&gt;Datos constantes · claves compuestas · seguridad frente a cambios"]
+    T1 --&gt; T2 --&gt; T3 --&gt; T4
+  end
+</div>
+<pre><code class="language-python">punto = (4, 5)
+x, y = punto      # desempaquetado
+
+# Tuplas como claves
+coordenadas = {(0, 0): "origen", (1, 2): "punto A"}
+print(coordenadas[(1, 2)])  # "punto A"
+
+# Conversión para modificar
+lista_punto = list(punto)
+lista_punto[0] = 10
+punto_modificado = tuple(lista_punto)  # (10, 5)
+
+</code></pre>
+<p>🔹 Inmutables → no se pueden modificar tras crearlas.</p>
+<h3 id="3-conjuntos-set">3. Conjuntos (set)</h3>
+<p>Un conjunto (set) es una colección no ordenada y sin elementos duplicados. Se utiliza para eliminar duplicados, comprobar pertenencia rápidamente y realizar operaciones de teoría de conjuntos. Para crear un conjunto vacío se usa set(), ya que {} crea un diccionario.</p>
+<p><strong>Operaciones principales</strong></p>
+<ul>
+<li>
+<p>Agregar o quitar: add(x) inserta x; remove(x) elimina x y lanza error si no existe; discard(x) elimina x si existe; pop() extrae un elemento arbitrario; clear() vacía el conjunto.</p>
+</li>
+<li>
+<p>Unión (| o union()): combina elementos de ambos conjuntos.</p>
+</li>
+<li>
+<p>Intersección (&amp; o intersection()): elementos comunes a ambos conjuntos.</p>
+</li>
+<li>
+<p>Diferencia (- o difference()): elementos presentes en un conjunto pero no en otro.</p>
+</li>
+<li>
+<p>Diferencia simétrica (^ o symmetric_difference()): elementos en uno u otro pero no en ambos.</p>
+</li>
+</ul>
+<div class="mermaid">flowchart TD
+
+  subgraph S["Conjunto (set/frozenset)"]
+    direction TB
+    S1["Estructura&lt;br/&gt;{a, b, c} · set() · x in s"]
+    S2["Características&lt;br/&gt;(set) mutable · (frozenset) inmutable · Sin orden · Sin índices · Sin duplicados · Elementos hashables"]
+    S3["Operaciones&lt;br/&gt;Unión | · Intersección &amp; · Diferencia - · Simétrica ^ · add/update/remove/discard/pop/clear · issubset/issuperset/isdisjoint"]
+    S4["Cuándo usar&lt;br/&gt;Eliminar duplicados · pruebas de pertenencia · álgebra de conjuntos en datos"]
+    S1 --&gt; S2 --&gt; S3 --&gt; S4
+  end
+</div>
+<pre><code class="language-python"># Ejemplo: uso de conjuntos con horarios de empleados
+
+# Conjunto de empleados que entran de mañana (antes de las 12:00)
+turno_mañana = {"María (08-16)", "Juan (09-17)", "Lucía (07-15)", "Ana (08-14)"}
+
+# Conjunto de empleados que entran de tarde (12:00 o después)
+turno_tarde = {"Diego (12-20)", "Raúl (12-20)", "Juan (09-17)"}
+
+print("Turno mañana:", turno_mañana)
+print("Turno tarde:", turno_tarde)
+
+# Unión: todos los empleados (sin duplicados)
+print("\nUnión (mañana ∪ tarde):")
+print(turno_mañana | turno_tarde)
+
+# Intersección: empleados que aparecen en ambos turnos (ejemplo de solapamiento)
+print("\nIntersección (mañana ∩ tarde):")
+print(turno_mañana &amp; turno_tarde)
+
+# Diferencia: empleados solo del turno de mañana
+print("\nDiferencia (mañana - tarde):")
+print(turno_mañana - turno_tarde)
+
+# Diferencia simétrica: empleados que están en un turno u otro, pero no en ambos
+print("\nDiferencia simétrica (mañana Δ tarde):")
+print(turno_mañana ^ turno_tarde)
+
+# Operaciones adicionales
+print("\n¿Raúl está en el turno de mañana?")
+print("Raúl (12-20)" in turno_mañana)
+
+# Ejemplo de eliminación de duplicados automáticamente
+horas = {"08", "09", "09", "10"}
+print("\nConjunto de horas únicas (sin duplicados):", horas)
+
+</code></pre>
+<p>🔹 No admiten elementos duplicados.</p>
+<h3 id="4-diccionarios">4. Diccionarios</h3>
+<p>Un diccionario (dict) almacena pares clave‑valor. Las claves deben ser únicas e inmutables y se accede a los valores mediante la clave. Los diccionarios son ideales para asociar información y se utilizan frecuentemente en Python (equivalen a los maps en Java o a los arrays asociativos de PHP).</p>
+<p><strong>Operaciones principales</strong></p>
+<ul>
+<li>
+<p>Crear y modificar: se define con llaves y pares clave: valor. Se añade o actualiza con dict[clave] = valor.</p>
+</li>
+<li>
+<p>Eliminar: del dict[clave] elimina el par; pop(clave) extrae y devuelve el valor; clear() borra todo el diccionario.</p>
+</li>
+<li>
+<p>Recorrer: keys() devuelve las claves; values() devuelve los valores; items() devuelve tuplas (clave, valor) para iterar.</p>
+</li>
+<li>
+<p>Obtener valor seguro: get(clave, predeterminado) evita errores cuando la clave no existe.</p>
+</li>
+<li>
+<p>Ordenar: sorted(diccionario) devuelve una lista de claves ordenadas.</p>
+</li>
+<li>
+<p>Comprensiones de diccionario: permiten construir diccionarios de forma concisa.</p>
+</li>
+</ul>
+<div class="mermaid">flowchart TD
+
+  subgraph D["Diccionario (dict)"]
+    direction TB
+    D1["Estructura&lt;br/&gt;{k: v} · d[k] · d.get(k, def) · keys/values/items"]
+    D2["Características&lt;br/&gt;Mutable · Orden de inserción al iterar (3.7+) · Claves únicas · Claves hashables · Valores de cualquier tipo"]
+    D3["Operaciones&lt;br/&gt;d[k]=v · update · pop/popitem/del/clear · {k:v for ...} · {**d1, **d2} · setdefault"]
+    D4["Cuándo usar&lt;br/&gt;Mapeos/índices semánticos · contadores/configuración · interoperar con JSON"]
+    D1 --&gt; D2 --&gt; D3 --&gt; D4
+  end
+</div>
+<pre><code class="language-python"># Crear un diccionario
+persona = {"nombre": "Ana", "edad": 25, "ciudad": "Barcelona"}
+persona["edad"] = 26        # actualiza valor
+persona["profesion"] = "Ingeniera"  # añade nuevo par
+
+print(persona.get("correo", "sin correo"))  # evita KeyError
+
+# Eliminar
+del persona["ciudad"]
+edad = persona.pop("edad")
+
+# Recorrer claves y valores
+for clave, valor in persona.items():
+    print(clave, "-&gt;", valor)
+
+# Comprensión de diccionarios
+cuadrados = {x: x**2 for x in range(1, 6)}  # {1:1, 2:4, 3:9, 4:16, 5:25}
+</code></pre>
+<h3 id="5-comprensiones">5. Comprensiones</h3>
+<p>Las comprensiones permiten construir colecciones de manera compacta y legible.</p>
+<ul>
+<li>
+<p>List comprehensions: [expr for elem in iterable if condicion]. Permiten filtrar y transformar elementos.</p>
+</li>
+<li>
+<p>Set comprehensions: {expr for elem in iterable} construyen un conjunto.</p>
+</li>
+<li>
+<p>Dict comprehensions: {clave_expr: valor_expr for elem in iterable} construyen un diccionario.</p>
+</li>
+</ul>
+<pre><code class="language-python"># Lista con los cuadrados de los números impares del 0 al 10
+impares_cuadrados = [x**2 for x in range(11) if x % 2 != 0]
+
+# Conjunto de vocales únicas en una frase
+frase = "Esto es un ejemplo"
+vocales = {c.lower() for c in frase if c.lower() in 'aeiou'}
+
+# Diccionario que mapea números pares a su cubo si el cubo &gt; 20
+cubos = {x: x**3 for x in range(6) if x % 2 == 0 and x**3 &gt; 20}
+
+print(impares_cuadrados)
+print(vocales)
+print(cubos)
+
+</code></pre>
+<h2 id="comparativa-de-colecciones">Comparativa de colecciones</h2>
+<p>Tabla comparativa con los <strong>usos más comunes</strong> de las colecciones en Python (<code>list</code>, <code>tuple</code>, <code>set</code>, <code>dict</code>) y <strong>cuándo conviene utilizarlas</strong>:  </p>
+<table>
+<thead>
+<tr>
+<th>Colección</th>
+<th>Sintaxis</th>
+<th>Características</th>
+<th>Cuándo usar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lista (<code>list</code>)</strong></td>
+<td><code>[1, 2, 3]</code></td>
+<td>- Ordenada  <br/>- Mutable (se pueden añadir, modificar y eliminar elementos) <br/>- Permite duplicados</td>
+<td>• Guardar datos en orden. <br/>• Acceder por posición/índice. <br/>• Añadir o quitar elementos frecuentemente. <br/>• Permitir duplicados.</td>
+</tr>
+<tr>
+<td><strong>Tupla (<code>tuple</code>)</strong></td>
+<td><code>(1, 2, 3)</code></td>
+<td>- Ordenada  <br/>- Inmutable (no se puede modificar después de creada) <br/>- Permite duplicados</td>
+<td>• Datos que no deben cambiar (constantes, coordenadas, configuraciones). <br/>• Usar como clave en un diccionario o elemento en un conjunto. <br/>• Mejor rendimiento (más rápida y ligera que lista).</td>
+</tr>
+<tr>
+<td><strong>Conjunto (<code>set</code>)</strong></td>
+<td><code>{1, 2, 3}</code></td>
+<td>- No ordenado  <br/>- Mutable (se pueden añadir y eliminar elementos) <br/>- <strong>No permite duplicados</strong></td>
+<td>• Eliminar duplicados automáticamente. <br/>• Operaciones de conjuntos (unión, intersección, diferencia). <br/>• Comprobar existencia rápida (<code>in</code>).</td>
+</tr>
+<tr>
+<td><strong>Diccionario (<code>dict</code>)</strong></td>
+<td><code>{"clave": "valor"}</code></td>
+<td>- Colección de pares <strong>clave:valor</strong> <br/>- Claves únicas (los valores pueden repetirse) <br/>- Acceso muy rápido por clave</td>
+<td>• Asociar un valor a una clave (como un “índice nombrado”). <br/>• Almacenar datos tipo JSON o registros. <br/>• Búsquedas rápidas por clave en lugar de índice.</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p>👉 <strong>Regla rápida para elegir:</strong>
+- <strong>Lista</strong> → orden y cambios frecuentes.<br>
+- <strong>Tupla</strong> → orden pero sin cambios.<br>
+- <strong>Set</strong> → sin orden, sin duplicados, operaciones de teoría de conjuntos.<br>
+- <strong>Dict</strong> → pares clave-valor con acceso rápido.  </br></br></br></p>
+<h2 id="diagrama-de-decision">Diagrama de decisión</h2>
+<div class="mermaid">flowchart TD
+    A["¿Necesitas pares clave-valor?"] --&gt;|Sí| D["Usa Diccionario (dict)"]
+    A --&gt;|No| B["¿Necesitas mantener el orden?"]
+
+    B --&gt;|Sí| C["¿Los datos deben ser inmutables?"]
+    B --&gt;|No| E["¿Necesitas evitar duplicados?"]
+
+    C --&gt;|Sí| F["Usa Tupla (tuple)"]
+    C --&gt;|No| G["Usa Lista (list)"]
+
+    E --&gt;|Sí| H["Usa Conjunto (set)"]
+    E --&gt;|No| G
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Volver al principio
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
