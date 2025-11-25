@@ -51,18 +51,22 @@ nav:
     - Referencias: RA2/ReferenciasAnalisisDatos.  md
     - Datasets:
       - Requerimientos: RA2/AnalisisDatos/RequerimientosAnalisis.md
-      - Pildoras:
+      - Contenido Requerimientos:
+          -DataEjemplo: RA2/AnalisisDatos/pildoras/data/NYC.csv
           -asytpe: RA2/AnalisisDatos/pildoras/pildora_astype.md
           -numpy: RA2/AnalisisDatos/pildoras/pildora_numpy.md
           -categorical: RA2/AnalisisDatos/pildoras/pildora_categorical.md
           -coerce: RA2/AnalisisDatos/pildoras/pildora_coerce.md
+          -correlacion: RA2/AnalisisDatos/pildoras/pildora_correlacion.md
           -dummies: RA2/AnalisisDatos/pildoras/pildora_dummies.md
-          -estadisticos: RA2/AnalisisDatos/pildoras/pildora_estadisticas.md
+          -estadisticos: RA2/AnalisisDatos/pildoras/pildora_estadisticos.md
           -groupby: RA2/AnalisisDatos/pildoras/pildora_groupby.md
           -histograma: RA2/AnalisisDatos/pildoras/pildora_histograma.md
           -merge: RA2/AnalisisDatos/pildoras/pildora_merge.md
+          -numpy: RA2/AnalisisDatos/pildoras/pildora_numpy.md
+          -percentiles: RA2/AnalisisDatos/pildoras/pildora_percentiles.md
           -pivot_table: RA2/AnalisisDatos/pildoras/pildora_pivot_table.md
-          -relleno_nulos: RA2/AnalisisDatos/pildoras/pildora_relleno_valores.md
+          -relleno_valores: RA2/AnalisisDatos/pildoras/pildora_relleno_valores.md
           -resample: RA2/AnalisisDatos/pildoras/pildora_resample.md
           -datetime: RA2/AnalisisDatos/pildoras/pildora_to_datetime.md
       - Coffe: RA2/AnalisisDatos/Coffee+Shop+Sales.md
